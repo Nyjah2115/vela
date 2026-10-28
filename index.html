@@ -239,6 +239,17 @@
     .hero-tag { left: 20px; right: 20px; bottom: 34px; width: auto; font-size: 12px; }
     .hero-info, .hero-meta { display: none; }
   }
+
+  /* telefon: dopisek, że pełny efekt jest na komputerze (Dawid, 28.10) */
+  .na-komputerze { display: none; }
+  @media (max-width: 760px) {
+    .na-komputerze {
+      display: block; position: absolute; left: 50%; top: 62px; transform: translateX(-50%);
+      padding: 6px 12px; border-radius: 999px; white-space: nowrap;
+      background: rgba(0, 0, 0, .45); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+      color: rgba(255, 255, 255, .85); font-size: 9.5px; letter-spacing: .14em; text-transform: uppercase;
+    }
+  }
 </style>
 </head>
 <body>
@@ -258,6 +269,7 @@
 
   <div class="wordmark" id="wordmark">Vela<sup>®</sup></div>
   <div class="hero-ui" id="heroUi">
+    <p class="na-komputerze">Strona najlepiej wygląda na komputerze</p>
     <p class="hero-tag">Słuchawki stworzone dla absolutnej ciszy. Aktywna redukcja szumów, aluminiowa konstrukcja, dźwięk bez kompromisów. Na najdłuższe trasy.</p>
     <div class="hero-info">
       <span class="lbl">Info</span>
